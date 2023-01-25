@@ -23,11 +23,7 @@ function save() {
   localStorage.getItem("Agenda_de_habitos")
   JSON.parse(localStorage.getItem("Agenda_de_habitos"))
 }
-/* const data = {
-  work: ["01-01","01-02","01-06","01-07","01-08","01-09","01-10","01-11",],
-  lunch: ["01-03"],
-  study: ["01-02"],
-} */
+
 const data = JSON.parse(localStorage.getItem("Agenda_de_habitos")) || {}
 nlwSetup.setData(data)
 nlwSetup.load()
